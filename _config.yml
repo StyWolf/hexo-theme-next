@@ -38,9 +38,9 @@ seo: false
 menu:
   home: /
   #categories: /categories
-  #about: /about
   archives: /archives
   tags: /tags
+  about: /about
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -70,9 +70,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -154,8 +154,7 @@ social_icons:
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
 #avatar:
-
-
+avatar: /images/avatar.png
 # Table Of Contents in the Sidebar
 toc:
   enable: true
@@ -173,8 +172,8 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
-  position: left
-  #position: right
+  #position: left
+  position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
@@ -275,7 +274,7 @@ mathjax:
 #duoshuo_shortname:
 
 # Disqus
-#disqus_shortname:
+disqus_shortname: senlief-1
 
 # Hypercomments
 #hypercomments_id:
@@ -492,7 +491,12 @@ vendors:
   # https://github.com/hustcc/canvas-nest.js
   canvas_nest:
 
-
+#Search
+search:
+    path: search.xml
+    field: post
+    format: html
+    limit: 10000
 
 # Assets
 css: css
